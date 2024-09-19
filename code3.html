@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>फसल रोग पहचान</title>
+    <link rel="stylesheet" href="code3.css">
+</head>
+<body>
+    <header>
+        <h1>फसल रोग पहचान</h1>
+    </header>
+
+    <section id="upload-section">
+        <h2>अपनी फसल की तस्वीर अपलोड करें / upload crop image</h2>
+        <form id="upload-form">
+            <input type="file" id="imageInput" accept="image/*" required>
+            <button type="submit">अपलोड करें</button>
+        </form>
+        <div id="google_translate_element" style="margin: 10px;"></div>
+        <div id="imagePreview" class="image-preview"></div>
+    </section>
+
+    <section id="prediction-section" style="display: none;">
+        <h2>रोग पहचान परिणाम</h2>
+        <div id="predictionResult"></div>
+    </section>
+
+    <footer>
+        <p>©️ 2024 फसल रोग पहचान. All rights reserved.</p>
+    </footer>
+
+    <script src="code3.js"></script>
+</body>
+</html>
